@@ -1,10 +1,16 @@
 const inputLable = document.querySelector('.input-lable');
 const emailBox = document.getElementById('email-box');
 
-emailBox.addEventListener('focus',(e)=>{
-    inputLable.style.top = '-50%'
-    inputLable.style.transform = 'translateY(50%)'
+const myfunc = ()=>{
+    inputLable.classList.add("event-class")
+    
+}
 
+
+emailBox.addEventListener('focus',myfunc)
+
+emailBox.addEventListener('focusout',(e)=>{
+    if(!emailBox.value){
+        inputLable.classList.remove('event-class');  
+    }
 })
-
-emailBox.removeEventListener('focus',)

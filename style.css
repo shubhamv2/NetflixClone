@@ -109,36 +109,42 @@ body, html{
     margin-top: 1em;
 }
 .form-container div{
-    width: 60%;
-    position: relative;
-    border: 1px solid red;
-}
-.form-container label{
-    position: absolute;
-    top:50%;
-    left: 15px;
-    transform: translateY(-50%);
-
-}
-.form-container input{
-    width: 100%;
-    box-sizing: border-box;
-    background-color: transparent;
+    width: 65%;
     border: .5px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(20, 20, 20, .5);
-    outline: none;
-    padding: 1em;
     border-radius: 5px;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.form-container label{
+    position:absolute;
+    left: .7em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
 }
 
-.form-container input::placeholder{
+.event-class{
+    top: 15px !important;
+    font-size: .7em !important;
     color: rgb(176, 176, 176);
-    font-size: 1.2em;
+}
+
+.form-container input{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    padding: .7em;
+    margin-top: 1em;
 }
 
 .form-container button{
-    width:40%;
+    width:35%;
     border-radius: 5px;
     background-color: red;
     border: none;
