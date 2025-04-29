@@ -1,0 +1,157 @@
+/* Resetting default settings */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+  
+.main{
+    background-image:linear-gradient( to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url('./assets/IN-en-20250421-TRIFECTA-perspective_dc5bcfdf-88a5-4972-8ffe-b28ff942f76e_large.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.main-box{
+    background-color: rgba(0, 0, 0, 0.55);
+    min-height: 100vh; 
+    width: 100%;
+} 
+
+
+/* navbar style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    margin-top:1.5em;
+    margin-bottom: 1.5em;
+}
+
+.signin-language-btn{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.btn-item{
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+    border-radius: .4em;
+    padding: .2em 1em;
+}
+
+.signin-btn{
+    background-color: red;
+    border: none;
+}
+
+.btn-language{
+    box-shadow: inset 0 0 2px .5px rgba(255, 255, 255, 0.5); /* 5px white inner border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.lg-bt-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main content */
+
+.center-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content h1{
+    font-size: 3em;
+    text-align: center; 
+    font-weight: 900;
+    line-height: 1.3em;
+}
+
+.center-content h3{
+    font-weight: 700;
+    text-align: center;
+}
+
+.center-content p{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    gap: .5em;
+    width: 550px;
+    margin-top: 1em;
+}
+.form-container div{
+    width: 60%;
+    position: relative;
+    border: 1px solid red;
+}
+.form-container label{
+    position: absolute;
+    top:50%;
+    left: 15px;
+    transform: translateY(-50%);
+
+}
+.form-container input{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: .5px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(20, 20, 20, .5);
+    outline: none;
+    padding: 1em;
+    border-radius: 5px;
+    color: white;
+}
+
+.form-container input::placeholder{
+    color: rgb(176, 176, 176);
+    font-size: 1.2em;
+}
+
+.form-container button{
+    width:40%;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.form-container button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
